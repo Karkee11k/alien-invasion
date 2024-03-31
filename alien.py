@@ -26,6 +26,7 @@ class Alien(Sprite):
         self.x += self.settings.alienSpeed * self.settings.fleetDirection
         self.rect.x = self.x
          
+         
     def hitEdges(self):
         """Returns true if the alien is at the edge of screen."""
         screenRight = self.screen.get_rect().right
